@@ -1,0 +1,60 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ed1a1a;
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    border-bottom: 5px solid darkred;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.links {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.icon {
+    width: 100px;
+    padding: 2px 4px;
+    margin: 2px 2px 2px 20px;
+    border-bottom: 2px solid black;
+    border-radius: 4px;
+}
+
+.iconText {
+    color: white;
+    font-size: 30px;
+    margin: 2px 2px 2px 20px;
+    font-weight: bold;
+    text-shadow: 3px 3px 3px black;
+}
+
+.nav-links {
+    text-decoration: none;
+    color: black;
+    padding: 4px 10px;
+    margin: 6px;
+    background-color: #fdda0d;
+    border-radius: 20px;
+    width: 66px;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    transition: all;
+    transition-duration: 0.2s;
+}
+
+.nav-links:hover{
+    border-radius: 20px;
+    background-color: #ffff00;
+    padding: 9px 9px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+}

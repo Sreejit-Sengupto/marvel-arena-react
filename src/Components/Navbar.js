@@ -12,7 +12,7 @@ export default function Navbar () {
 
             <div className="links">
                 <div className="nav-links"><a href="/index.html">Home</a></div>
-                <div className="nav-links"><a href="https://twitter.com/SreeSen03" target="_blank">Twitter</a></div>
+                <div className="nav-links"><a href="https://twitter.com/SreeSen03" target="_blank" rel="noreferrer">Twitter</a></div>
             </div>
         </div>
     )

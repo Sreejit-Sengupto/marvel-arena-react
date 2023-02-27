@@ -79,3 +79,31 @@
 .twitterLink:hover {
     text-shadow: 0px 0px 1px rgb(29, 155, 240);
 }
+
+.transitionDiv {
+    background: red;
+    height: 100px;
+    width: 200px;
+    margin: 0 auto;
+  }
+  
+  @keyframes inAnimation {
+    0% {
+      opacity: 0;
+      visibility: hidden;
+    }
+    100% {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+  
+  @keyframes outAnimation {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }

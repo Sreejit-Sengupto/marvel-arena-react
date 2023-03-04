@@ -5,7 +5,7 @@ html {
 body {
     margin: 0px;
     padding: 0px;
-    background-image: url('http://trumpwallpapers.com/wp-content/uploads/Marvel-Wallpaper-04-3840-x-2160.jpg');
+    background-image: url('./Components/images/marvel-arena-background-image.jpg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
     font-family: 'Josefin Sans', sans-serif;
@@ -16,6 +16,7 @@ footer {
     text-align: center;
     margin-top: 20px;
     padding: 10px;
+    background-color: black;
 }
 footer small {
     color: white;

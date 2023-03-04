@@ -14,21 +14,38 @@ export default function Card (props) {
 
     return (
         <motion.div className="updateStyle" initial={{opacity: 0}} whileInView={{opacity: 1}} transition={{delay: 0.18}}>
-            <motion.div className="img--container" whileHover={{scale: 1.05}}>
-                <img src={props.content.image} alt="banner" className="img" />
-                <button onClick={handleChange} className="btn" >{!render ? "Read" : "Hide"}</button>
-            </motion.div>
+            {!render && <motion.div 
+                className="img--container" 
+                whileHover={{scale: 1.05}}
+                animate={{scale: 1}}
+                initial={{scale: 0}}
+                transition={{delay: 0.1}}
+            >
+                <img src={props.content.image} alt="banner" className="img" onClick={handleChange} />
+                {/* <button onClick={handleChange} className="btn" >{!render ? "Read" : "Hide"}</button> */}
+            </motion.div>}
 
             {render && <motion.div className="content"
                 animate={{scale: 1}}
                 initial={{scale: 0}}
                 transition={{delay: 0.1}}
+                onClick={handleChange}
+                style={{
+                    backgroundColor: 'black',
+                    backgroundImage: `url(${props.content.image})`,
+                    backgroundRepeat: 'no-repeat',
+                    backgroundSize: '100% 100%',
+                    color: 'white',
+                    // opacity: '0.5'
+                }}
             >
-                <p>{props.content.description}</p>
-                <p className="twitter">
-                    <a href={props.content.twitterLink} className="twitterLink" target="_blank" rel="noreferrer">Follow Captain America on Twitter</a>
-                </p>
-                {trailer}
+                <p className="description">{props.content.description}</p>
+                <div className="links--section">
+                    <p className="twitter">
+                        <a href={props.content.twitterLink} className="twitterLink" target="_blank" rel="noreferrer">Follow Captain America on Twitter</a>
+                    </p>
+                    {trailer}
+                </div>
             </motion.div>}
     </motion.div>
     )

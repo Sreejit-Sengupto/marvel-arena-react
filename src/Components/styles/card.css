@@ -52,6 +52,20 @@
     transition-duration: 0.2ms;
 }
 
+.description {
+    font-size: 20px;
+    background-color: black;
+    opacity: 0.8;
+    text-shadow: 0px 0px white;
+    border-radius: 20px;
+}
+
+.links--section {
+    background-color: black;
+    padding: 10px;
+    border-radius: 20px;
+    opacity: 0.93;
+}
 .twitter {
     margin-bottom: 0px;
 }

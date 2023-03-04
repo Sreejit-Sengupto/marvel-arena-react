@@ -42,7 +42,7 @@ export default function Card (props) {
                 <p className="description">{props.content.description}</p>
                 <div className="links--section">
                     <p className="twitter">
-                        <a href={props.content.twitterLink} className="twitterLink" target="_blank" rel="noreferrer">Follow Captain America on Twitter</a>
+                        <a href={props.content.twitterLink} className="twitterLink" target="_blank" rel="noreferrer">Follow {props.content.name} on Twitter</a>
                     </p>
                     {trailer}
                 </div>
